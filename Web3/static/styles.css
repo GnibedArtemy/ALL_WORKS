@@ -1,0 +1,32 @@
+body{ /*(6)*/
+    margin: 0;
+}
+
+.main-menu{
+    background-color: antiquewhite; /*(5)*/
+    min-height: 70px; /*Не через Height!*/
+    padding-top: 20px;
+    border-bottom: 5px solid orange;
+}
+
+.main-menu a{ /*(7)*/
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase; /*Верхний регистр*/
+    text-decoration: none; /*Без подчеркивания*/
+    margin-right: 15px; /*Расстояние между ссылками*/
+    color: black;
+}
+
+.navigation{
+    float: left;
+}
+
+.container{ /*(9)*/
+    max-width: 75%;
+    margin: 0 auto; /*второе значение - слева и справа*/
+}
+
+.form-group{ /*(15)*/
+    margin-bottom: 5px;
+}
