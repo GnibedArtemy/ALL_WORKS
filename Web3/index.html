@@ -8,7 +8,7 @@
 <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lZHmug45cX1ScSQmjRphAY5LvFcTOnAI7uz3yus4s9c0LSvOIrsVmQ52z_B86hkQajLCd8agfJ0DKA05rWTitYfR-F9XHOlbEfC5R2uSmeYxEqnu53Y9gj594p7mY8BsUACHPvusASYEJgTLI__bqYTo93gn-LvXoKfz4Cu7zMPq58wsEK-YWOr4fXEPLmzDoV0ljeNcJXbFxa335UPceyK8xwmmRlPzVDnmKYrAZiF7iy6Zk_6iH6Ycun_ARnAIcVAabb1hr9mDkfseNA7QOHk9c9bIRKoHM-1yjIgz2VxVxTy6qvIplX_ktAboBcYytaWWtWMD2A2n-YhMAkz1_P-SbUG7v-GnxXeGA89uXVtJ9E5pYfIsmn8hf4dGpm9RCInew0_bx3d7eHhVYE515kX1IalLjJxzVEtiZoWfqXJJntxb95vvDOcF5A4E_BWsEAymZCcfa3OqbQ1_9LyX8z_EWoillccWsNnHjWds0U9m-hEoFHvBxne7_SC0CS9Fe4-3G0XoQ_mJn8j-OPDesHRjfu-dai2UNUSW18qN6WVVmfYsW4Uxbe8qUhNN5Rn0XopLl6VeK88VxyF5JxgyaZ3e6IzIh_Q-Ar-hkXQRtZTw06SpFtrhgcYh-1AtIsu3xd2JLAqa63LBG97J9kV5DEMURaq8nrOxya0_9FQeW4V4_eex93HiwjoT4tOgJhwzn1QGm1MUlUgNtTNqsaafysPtZ_oX2t8cLtj7SpPJaIfXW0eq2Lcq4e8PiZnqKpJT06gjXR9Hayk9r0rTsSSMZ00COaFaCMLtzAi0DiAivmyvsHUG727gJoZ0LpJuWiKGqz2JhOaLsNLdYgKZ2JG-EfHr_tB155Fvrwioy5LWMKL5f6J2XK9qE6YcFFIF2KhPd0yVMdDNBdy8H6phAmANi701pz2_J8wIrrEVE7Y8KtsnkuJiMIUeNluwMU_yVHzNrqgs6f5Sj-UT5vXKnmCULQ3LiTpYKiPUIpUJ7rhQYGY" charset="UTF-8"></script></head>
 <body>
     <header>
-        <nav class="main-menu"> <!--(1)(4)-->
+        <nav class="main-menu clearfix"> <!--(1)(4)(23)-->
             <div class="container"> <!--(8)-->
                 <div class="navigation"> <!--(2)-->
                     <a href="#">Главная</a>
@@ -21,6 +21,7 @@
                 <div class="profile"> <!--(3)-->
                     <a href="#">Вход</a>
                 </div>
+                <!--<div class="clearfix"></div> (21) В случае использования псевдоклассов этот элемент добавлять не обязательно-->
             </div>
 
         </nav>
@@ -111,5 +112,10 @@
     (17) Шаги 13-16 для групп товаров (только с радиокнопками)
     (18) Кнопка для отправки значений формы
     (19) css: применение float для navigation
+    (20) css: применение float для profile
+    (21) Элемент-распорка (см CSS) решает проблему схлопывания родительского элемента, т.к. он видит float
+    (22) CSS: Лучше через псевдоэлементы (after for) - этих элементов нет в html коде, но который добавляется как последний элементв контейнер
+    (23) Clearfix добавляется в нужный контейнер
+    (24) CSS: настройка sidebar, чтобы не был растянут по всей ширине
 
 -->

@@ -18,8 +18,12 @@ body{ /*(6)*/
     color: black;
 }
 
-.navigation{
+.navigation{ /*(19)*/
     float: left;
+}
+
+.profile{ /*(20)*/
+    float:right;
 }
 
 .container{ /*(9)*/
@@ -27,6 +31,22 @@ body{ /*(6)*/
     margin: 0 auto; /*второе значение - слева и справа*/
 }
 
+/*.clearfix{
+    clear: both; (21) clear - запрет обтекания (left, right, both) clearfix - не очень хорошо, лучше через псевдоэлементы
+}*/
+
+.clearfix::after{ /*(22)*/
+    content:""; /*content обязательно*/
+    display: block;
+    clear: both;
+}
+
 .form-group{ /*(15)*/
     margin-bottom: 5px;
+}
+
+.sidebar{ /*(24)*/
+    padding: 20px;
+    width: 220px;
+    box-sizing: border-box;
 }
