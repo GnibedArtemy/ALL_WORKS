@@ -2,6 +2,11 @@ body{ /*(6)*/
     margin: 0;
 }
 
+.header{ /*(34)*/
+    position: sticky;
+    top: 0;
+}
+
 .main-menu{
     background-color: antiquewhite; /*(5)*/
     min-height: 70px; /*Не через Height!*/
@@ -47,6 +52,62 @@ body{ /*(6)*/
 
 .sidebar{ /*(24)*/
     padding: 20px;
-    width: 220px;
+    width: 220px; /*Автоматически создался margin*/
+    box-sizing: border-box; /*(25)*/
+    float: left; /*(27)*/
+}
+
+.goods-list{ /*(26)*/
+    /*padding: 10px;
+    background-color: black; - временные стили для виимости*/ 
+    margin-left: 250px;
+    padding-top: 20px;
+
+}
+
+.goods{ /*(31)*/
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-height: 300px;
+    min-width: 250px;
+}
+
+.goods-img img{ /*(32)*/
+    width: 250px;
+    height: auto;
+    margin: 0 auto; /*Центрирование изображений*/
+    display: block; /*Чтобы работало выравнивание с margin*/
+
+}
+
+.price-and-buy{ /*(32)*/
+    height: 50px;
+}
+
+.price{ /*(32)*/
+    text-align: center;
+    display: inline-block; /*Чтобы выстроилось с кнопкой в одну строку*/
+    height: 100%;
+    width: 50%;
     box-sizing: border-box;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.buy-btn{ /*(32)*/
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(52, 13, 194);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
 }
