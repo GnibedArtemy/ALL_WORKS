@@ -3,9 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="static/style.css">
+<body> <!--(6)-->
+    <header class="header"> <!--(2)-->
+        <!--(2)  <nav class="main-menu clearfix"> -->
+        <div class="container"> <!--(3)-->
+            <nav class="main-menu"> <!--(3)-->
+                <div class="container">
+                    <div class="navigation"> <!--(4) (5)-->
+                        <a href="#">Главная</a>
+                        <a href="#">Информация</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Прайс-лист</a>
+                        <a href="#">Магазины</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="profile"> <!--(4)-->
+                        <a href="#">Вход</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Заголовок категории товаров</h1>
+            <aside class="sidebar">
+                <form action="#">
+                    <section>
+                        <h3>Производители:</h3>
+                        <div class="form-group">
+                            <input type="checkbox" name="manufacturer" id="manufacturer1" value="1">
+                            <label for="manufacturer1">Производитель 1</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="manufacturer" id="manufacturer2" value="2">
+                            <label for="manufacturer2">Производитель 2</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="manufacturer" id="manufacturer3" value="3">
+                            <label for="manufacturer3">Производитель 3</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="manufacturer" id="manufacturer4" value="4">
+                            <label for="manufacturer4">Производитель 4</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="manufacturer" id="manufacturer5" value="5">
+                            <label for="manufacturer5">Производитель 5</label>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Группы товаров:</h3>
+                        <div class="form-group"> 
+                            <input type="radio" name="group" id="group1" value="1">
+                            <label for="group1">Группа 1</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="group" id="group2" value="2">
+                            <label for="group2">Группа 2</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="group" id="group3" value="3">
+                            <label for="group3">Группа 3</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="group" id="group4" value="4">
+                            <label for="group4">Группа 4</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="group" id="group5" value="5">
+                            <label for="group5">Группа 5</label>
+                        </div>
+                        <form-group>
+                            <input type="submit" value="Применить">
+                        </form-group>
+                    </section>
+                </form>
+            </aside>
+
+            <section class="goods-list"> <!--(1)-->
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy"> 
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="goods-img">
+                        <img src="static/images/product1.jpg" alt="alt">
+                    </div>
+                    <div class="goods-description">
+                        <p>Описание товара</p>
+                    </div>
+                    <div class="price-and-buy">
+                        <span class="price">5000 руб.</span><a class="buy-btn" href="#">Заказать</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
+
+<!--
+    (1) Через CSS: сделать список товаров как флекс-контейнер
+    (2) Переносим класс main menu из nav в header переименовываем его в header (поскольку содержит набор необходимых свойств). Через CSS: переписать главное меню через флексбоксы
+    (3) Поместим nav в div с классом container и установим для nav класс main-menu. Через CSS: написать свойства для main-menu. Clearfix уже не нужен
+    (4) Через CSS: убираем float для навигационной панели и кнопки. flex-grow = 1 - будет стремиться заполнить свободное пространство (навигационное меню будет выровнено по правому краю)
+    (5) Флекс-элементы могут также быть и флекс-контейнерами, т.е. эти конструкции могут быть вложены. Соотествтенно можно преобразовать navigation (флекс - элемент) во флекс-контейнер через CSS. Если туда еще wrap добавить, то строчные элементы будут переноситься как блочные (слово "прайс-лист" целиком перейдет на новую строку, а не через дефис)
+    (6) Создадим элементы адаптивной верстки (чтобы пункты меню располагались в столбик при определенной ширине). Поскольку у body стоит минимальная ширина 800, то при достижении этой ширины появляется полоса прокрутки
+
+-->
